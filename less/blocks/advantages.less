@@ -1,0 +1,136 @@
+.advantages{
+	display:flex;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.advantages__wrap{
+	width:@desktop-width;
+	margin:0 auto;
+}
+
+.advantages ul{
+	display:flex;
+	padding:0;
+	list-style:none;
+	margin:0;
+	justify-content:space-between;
+	margin-bottom:50px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+
+.advantages ul li a{
+	width:216px;
+	display:block;
+	height:187px;
+	text-decoration: none;
+}
+
+.advantages__wrap h2{
+  font-size: 26px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(84, 84, 85);
+  line-height: 1.2;
+  margin-bottom:0;
+  margin-top:60px;
+  margin-bottom:17px;
+}
+
+
+.advantages ul li:first-child a{
+	background-image:url('../img/ad-1.png');
+	background-repeat:no-repeat;
+	background-position: center top 32px;
+	
+}
+
+.advantages ul li:nth-child(2) a{
+	background-image:url('../img/ad-2.png');
+	background-repeat:no-repeat;
+	background-position: center top 32px;
+
+}
+
+.advantages ul li:nth-child(3) a{
+	background-image:url('../img/ad-3.png');
+	background-repeat:no-repeat;
+	background-position: center top 32px;
+
+}
+
+.advantages ul li:last-child a{
+	background-image:url('../img/ad-4.png');
+	background-repeat:no-repeat;
+	background-position: center top 32px;
+
+}
+
+.advantages__wrap ul li a{
+	display:flex;
+	position:relative;
+}
+
+.advantages__wrap ul li a span{
+	display:block;
+	position:absolute;
+	top:76%;
+	width:100%;
+	font-size: 16px;
+	font-family: "Myriad Pro", sans-serif;
+	color: rgb(84, 84, 85);
+	text-transform: uppercase;
+	line-height: 1.4;
+	text-align: center;
+	font-weight:bold;
+}
+
+.advantages__wrap ul li a span::before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:37px;
+	height:2px;
+	background-color:#d1528b;
+	top:-16px;
+	left:50%;
+	transform:translateX(-50%);
+
+}
+
+
+@media(max-width:1200px){
+
+.advantages__wrap{
+	width:@tablet-width;
+	margin:0 auto;
+}
+
+.advantages__wrap ul{
+	flex-wrap:wrap;
+}
+
+.advantages__wrap ul li{
+	width:300px;
+}
+
+}
+
+@media(max-width:768px){
+
+.advantages__wrap{
+	width:@mobile-width;
+	margin:0 auto;
+}
+
+.advantages__wrap ul{
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+
+.advantages__wrap ul li{
+	width:200px;
+}
+
+
+}

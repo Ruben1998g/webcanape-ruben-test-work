@@ -1,0 +1,139 @@
+.skills{
+	display:flex;
+	padding-bottom:10px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+
+.skills__wrap{
+	width:@desktop-width;
+	margin:0 auto;
+}
+
+.skills__wrap ul{
+	display:flex;
+	padding:0;
+	list-style:none;
+	margin:0;
+	justify-content:space-between;
+	margin-top:60px;
+	margin-bottom:50px;
+}
+
+.skills__wrap ul li a{
+	width:587px;
+	display:block;
+	height:168px;
+	background-color: #d1528b;
+	text-decoration: none;
+	border-radius:6px;
+}
+
+.skills__wrap ul li a{
+	position:relative;
+	display:flex;
+}
+
+.skills__wrap ul li:first-child a{
+	background-image: url('../img/doors-1.png');
+	background-repeat:no-repeat;
+	background-position-x:right;
+	background-position-y:center;
+}
+
+.skills__wrap ul li:last-child a{
+	background-image: url('../img/doors-2.png');
+	background-repeat:no-repeat;
+	background-position-x:right;
+	background-position-y:center;
+}
+
+
+
+
+.skills__wrap ul li a::before{
+	border-radius:6px;
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background: linear-gradient(90deg, rgba(206,65,128,0.99) 0%, rgba(255,255,255,0) 100%);
+}
+
+
+.skills__wrap ul li a span{
+  font-size: 18px;
+  font-family: "Exo2", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-left:40px;
+  position:relative;
+  display:block;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top:58px;
+}
+
+.skills__wrap ul li:first-child a span::before{
+	content:"";
+	width:58px;
+	height:44px;
+	display:block;
+	position:absolute;
+	background-image: url('../img/skills-1-icon.png');
+	background-repeat:no-repeat;
+	top:0px;
+}
+
+
+.skills__wrap ul li:last-child a span::before{
+	content:"";
+	width:59px;
+	height:45px;
+	display:block;
+	position:absolute;
+	background-image: url('../img/skills-2-icon.png');
+	background-repeat:no-repeat;
+	top:0px;
+}
+
+
+@media(max-width:1200px){
+
+	.skills__wrap{
+		width:@tablet-width;
+		margin:0 auto;
+	}
+
+	.skills__wrap ul{
+		flex-wrap:wrap;
+		margin-bottom:20px;
+	}
+
+	.skills__wrap ul li{
+		margin-bottom:30px;
+	}
+
+	.skills__wrap ul li a {
+		width:768px;
+	}
+}
+
+
+
+@media(max-width:768px){
+	
+.skills__wrap{
+	width:@mobile-width;
+	margin:0 auto;
+}
+
+.skills__wrap ul li a{
+	width:500px;
+}
+
+}
+

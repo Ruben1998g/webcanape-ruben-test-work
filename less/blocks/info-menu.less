@@ -1,0 +1,260 @@
+.info-menu-wrap{
+	display:flex;
+	background-color: #373737;
+}
+
+.info-menu{
+	width:@desktop-width;
+
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	box-sizing:border-box;
+	margin-top:17px;
+	margin-bottom:17px;
+}
+
+.info-menu__ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:flex;
+}
+
+.info-menu__p{
+	margin:0;
+	padding:0;
+
+}
+
+.info-menu__ul li{
+	display:flex;
+}
+
+.info-menu__ul li a{
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+.info-menu__ul li:not(:last-child){
+	margin-right:34px;
+}
+
+.info-menu__ul li a{
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #818181;
+  line-height: 1.2;
+  text-decoration: none;
+
+}
+
+.info-menu__a{
+	 font-size: 14px;
+	 font-family: "Roboto", sans-serif;
+	 color: #818181;
+	 line-height: 1.2;
+	 text-decoration: none;
+	 position:relative;
+	 display:flex;
+}
+
+.info-menu__a::before{
+	content:"";
+	display:block;
+	position:relative;
+	width:7px;
+	height:11px;
+	background-image:url('../img/map-marker.png');
+	top:50%;
+	transform:translateY(-60%);
+	left:-10px;
+}
+
+.info-menu__ul li a:hover,
+.info-menu__ul li a:focus{
+	transition:0.3s color;
+	color:white;
+}
+
+.info-menu__a:hover,
+.info-menu__a:focus{
+	transition:0.3s color;
+	color:white;
+	cursor:pointer;
+}
+
+.info-menu__a:hover::before,
+.info-menu__a:focus::before{
+	background-image:url('../img/map-marker-hover.png');
+	transition:0.3s background-image;
+}
+
+.logo-info__last-call{
+	cursor:pointer;
+}
+
+.logo-info__last-call:hover,
+.logo-info__last-call:focus{
+	background-color:#ef3b8b;
+	transition:all 0.3s;
+
+}
+
+.main-header__menu ul li a:hover,
+.main-header__menu ul li a:focus{
+	color:#cd3378;
+	transition:all 0.3s;
+}
+
+.main-header__menu ul li:nth-child(1):hover::before,
+.main-header__menu ul li:nth-child(1):focus::before{
+	left:-40px;
+	transition:all 0.3s;
+	background-image:url('../img/menu-1-hover.png');
+}
+
+.main-header__menu ul li:nth-child(2):hover::before,
+.main-header__menu ul li:nth-child(2):focus::before{
+	left:-32px;
+	transition:all 0.3s;
+	background-image:url('../img/menu-2-hover.png');
+}
+
+.main-header__menu ul li:nth-child(3):hover::before,
+.main-header__menu ul li:nth-child(3):focus::before{
+	left:-50px;
+	transition:all 0.3s;
+	background-image:url('../img/menu-3-hover.png');
+}
+
+.main-header__menu ul li:nth-child(4):hover::before,
+.main-header__menu ul li:nth-child(4):focus::before{
+	left:-48px;
+	transition:all 0.3s;
+	background-image:url('../img/menu-4-hover.png');
+}
+
+.main-header__menu ul li:nth-child(5):hover::before,
+.main-header__menu ul li:nth-child(5):focus::before{
+	left:-40px;
+	transition:all 0.3s;
+	background-image:url('../img/menu-5-hover.png');
+}
+
+.doors__wrap li:hover a::before{
+	opacity:0;
+	transition:all 1s;
+}
+
+.doors__wrap li:hover a span{
+	color:#545455;
+	transform:translateY(-70px);
+	border-bottom-color:#545455;
+	transition:all 1s;
+}
+
+
+.window__wrap ul li:hover a p,
+.window__wrap ul li:focus a p{
+	opacity:1;
+	transition:all 1s;
+}
+
+
+.skills__wrap ul li:first-child a:hover span::before{
+	transform:translateX(266px);
+	transition:all 1s;
+}
+
+.skills__wrap ul li:last-child a:hover span::before{
+	transform:translateX(110px);
+	transition:all 1s;
+}
+
+.skills__wrap ul li a:hover{
+	filter:saturate(120%);
+	transition:all 1s;
+}
+
+.advantages__wrap ul li:hover a{
+	filter: saturate(200%);
+	transition:all 1s;
+	color:#cd3378;
+}
+
+.advantages__wrap ul li:hover a span{
+	transition:all 1s;
+	color:#cd3378;
+}
+
+.rewiewe .owl-prev, .rewiewe .owl-prev:hover,
+.rewiewe .owl-next, .rewiewe .owl-next:hover{
+	background-color: rgba(0, 0, 0, 0.4) !important;
+	transition:all 0.3s;
+}
+
+.brands__right ul li:hover a img{
+	filter:saturate(200%);
+	transition:all 1s;
+}
+.works .owl-prev:hover,
+.works .owl-next:hover{
+	background-color: rgba(0, 0, 0, 0.4) !important;
+	transition:all 0.3s;
+}
+
+
+
+.forms form input[type="text"]:hover,
+.forms form textarea:hover{
+	border:4px solid #cd3378;
+	transition:all 0.3s;
+}
+
+.forms form input[type="submit"]{
+	cursor:pointer;
+}
+
+.forms form input[type="submit"]:hover{
+	background-color: #ef3b8b;
+    transition: all 0.3s;
+}
+
+.main-footer a,
+.main-footer__right h4{
+	color:#656565 !important;
+	cursor:pointer;
+}
+
+.main-footer a:hover,{
+	color: #cd3378;
+    transition: all 0.3s;
+}
+
+
+@media(max-width:1200px){
+	.info-menu{
+		width:@tablet-width;
+	}
+
+	.info-menu__ul{
+		margin-left:auto;
+	}
+
+	.info-menu__a{
+		display:none;
+	}
+
+}
+
+@media(max-width:768px){
+	.info-menu{
+		width:@mobile-width;
+	}
+
+	.info-menu__ul{
+		margin-right:auto;
+	}
+}
+

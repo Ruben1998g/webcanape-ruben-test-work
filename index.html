@@ -1,24 +1,647 @@
 <!DOCTYPE html>
-<html leng="en">
+<html class="overflow">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Азбука Окна</title>
 	<meta name="viewport" content="width=divice-width, initial-scale=1">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/normilize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #fff;
+      height: 3000px;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .slider__item>div {
+      line-height: 250px;
+      font-size: 100px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <a id="myBtn" title="Go to top"></a>
+
+    <div class="loader show">
+      <div class="l_main">
+        <div class="l_square">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="l_square">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="l_square">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="l_square">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
 
 <header class="main-header">
+  <div class="info-menu-wrap">
+	<section class="info-menu">
+    <h5 class="visually-hidden">Меню сайта</h5>
+		<ul class="info-menu__ul">
+			<li>
+				<a href="#">
+					О компании
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Цены и акции
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Полезное
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Контакты
+				</a>
+			</li>
+		</ul>
+		<a class="info-menu__a">
+      Москва, шоссе Энтузиастов, д. 7А, ТЦ «Рогожская застава	
+		</a>
+	</section>
+  </div>
+  <div class="logo__info-wrap">
+
+	<section class="logo-info">
+      <h5 class="visually-hidden">Меню с логотиаом сайта</h5>
+		<div class="logo-info__logotype">
+			<h3>АЗБУКА<br><span>ОКНА</span></h3>
+			<p>Оригинальные окна Rehau<br> от немецкого производителя</p>
+		</div>
+		<div class="logo-info__call">
+			<div>
+				<a class="logo-info__call-a">+7 (495) 480-76-45<br>
+				</a>
+				<span>c 9:00 до 21:00 без выходных</span>
+			</div>
+			<div class="logo-info__button">
+				<buttom href="#" class="logo-info__last-call">Обратный звонок</buttom>
+			</div>
+		</div>
+	</section>
+	</div>
+	<div>
+	<nav class="main-header__menu-wrap">
+    <h5 class="visually-hidden">Навигация</h5>
+		<div class="main-header__menu">
+			<ul>
+			<li>
+				<a href="#">
+					ОКНА
+				</a>
+			</li>                
+			
+			<li>
+				<a href="#">ДВЕРИ</a>
+			</li>
+			<li>
+				<a href="#">БАЛКОНЫ</a>
+			</li>
+			<li>
+				<a href="#">УСЛУГИ</a>
+			</li>
+			<li>
+				<a href="#">КОМПЛЕКТУЮЩИЕ</a>
+			</li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+	<section class="slider__wrap">
+    <h5 class="visually-hidden">Слайдер</h5>
+		<div class="slider">
+
+			<div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <div style="height: 552px;" class="slider__div">
+          <div class="slider__block">
+            <h3>Москитная сетка в подарок</h3>
+            <p>Все весну при заказе окон</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div style="height: 552px;" class="slider__div">
+        	<div class="slider__block">
+        		<h3>Скидки на окна до 50%</h3>
+        		<p>Торопитесь оставить заявку! Предложение ограничено</p>
+        	</div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div style="height: 552px;" class="slider__div">
+          <div class="slider__block">
+            <h3>Надоело переплачивать за бренды?</h3>
+            <p>Только у нас стоимость окна не зависит от          производителя профиля. 
+              Любой производитель - одна цена.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+  </div>
+
+
+
+		</div>
+	</section>	
 </header>
 
-<body class="main-body">
-</body>
+<main class="main">
+  <section class="doors">
+    <h5 class="visually-hidden">Предложения</h5>
+    <div class="doors__wrap">
+      <ul>
+        <li>
+          <a href="#"><span>Окна</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Двери</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Балконы</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="window">
+    <h5 class="visually-hidden">Товары</h5>
+    <div class="window__wrap">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/window.png" alt="Товар">
+            <span class="window__first">Стандартные окна</span>
+             <p>Окна с повышенными теплозащитными характеристиками. Для холодных квартир, загородного жилья, объединения лоджий с комнатой. 
+              <span class="window__price">Цена от <strong style="font-size:24px;">9 999</strong> руб. за м2</span>
+              <span class="window__order">
+                Заказать
+              </span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/window.png" alt="Товар">
+            <span class="window__first">Эконом окна</span>
+             <p>Окна с повышенными теплозащитными характеристиками. Для холодных квартир, загородного жилья, объединения лоджий с комнатой. 
+              <span class="window__price">Цена от <strong style="font-size:24px;">9 999</strong> руб. за м2</span>
+              <span class="window__order">
+                Заказать
+              </span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/window.png" alt="Товар">
+            <span class="window__first">Теплоизоляционные окна</span>
+             <p>Окна с повышенными теплозащитными характеристиками. Для холодных квартир, загородного жилья, объединения лоджий с комнатой. 
+              <span class="window__price">Цена от <strong style="font-size:24px;">9 999</strong> руб. за м2</span>
+              <span class="window__order">
+                Заказать
+              </span>
+             </p>
+          </a>
+        </li>
+        <li>
+         <a href="#">
+            <img src="img/window.png" alt="Товар">
+            <span class="window__first">Элитные окна</span>
+             <p>Окна с повышенными теплозащитными характеристиками. Для холодных квартир, загородного жилья, объединения лоджий с комнатой. 
+              <span class="window__price">Цена от <strong style="font-size:24px;">9 999</strong> руб. за м2</span>
+              <span class="window__order">
+                Заказать
+              </span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/window.png" alt="Товар">
+            <span class="window__first">Энергоэффективные
+окна</span>
+             <p>Окна с повышенными теплозащитными характеристиками. Для холодных квартир, загородного жилья, объединения лоджий с комнатой. 
+              <span class="window__price">Цена от <strong style="font-size:24px;">9 999</strong> руб. за м2</span>
+              <span class="window__order">
+                Заказать
+              </span>
+             </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/window.png" alt="Товар">
+            <span class="window__first">Евро окна</span>
+             <p>Окна с повышенными теплозащитными характеристиками. Для холодных квартир, загородного жилья, объединения лоджий с комнатой. 
+              <span class="window__price">Цена от <strong style="font-size:24px;">9 999</strong> руб. за м2</span>
+              <span class="window__order">
+                Заказать
+              </span>
+             </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="skills">
+    <h5 class="visually-hidden">Навыки</h5>
+    <div class="skills__wrap">
+      <ul>
+        <li>
+          <a href="#">
+            <span>Бесплатный вызов замерщика</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>Заказать услуги</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="originals">
+    <h5 class="visually-hidden">Информация</h5>
+    <div class="originals__wrap">
+      <h2>
+        «Азбука окна» — оригинальные окна Rehau (Рехау) 
+        от немецкого производителя
+      </h2>
+        <ul>
+         <li>
+          <p>
+            В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает уважение и абсолютное доверие к товару. Именно эти слова звучат первыми, когда речь заходит о знаменитых окнах Rehau, оставивших конкурирующую продукцию далеко позади.
+          </p>
+        </li>
+        <li>
+          <p>
+            Мы используем комплектующие известных европейских производителей. При изготовлении окон Рехау компания АзбукаОкна комплектует свои изделия продукцией известных европейских марок – профиль Rehau, фурнитура – Sigenia, стекло Saint Gobain. Используя качественные и надежные комплектующие Азбука Окна гарантирует своим клиентам надежную конструкцию, которая долго прослужит, не требуя специального обслуживания.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="advantages">
+    <h5 class="visually-hidden">Преимущества</h5>
+    <div class="advantages__wrap">
+      <h2>Преимущества</h2>
+      <ul>
+        <li>
+          <a href="#"><span>ассортимент</span></a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              доступны цены вне
+              зависимости от профиля
+          </span>
+          </a>
+        </li>
+          <li>
+          <a href="#"><span>быстрые сроки</span></a>
+        </li>
+        <li>
+          <a href="#">
+           <span>
+            без предоплаты
+            (рассрочка 0%)
+          </span>
+        </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="rewiewe">
+    <h5 class="visually-hidden">Отзывы</h5>
+    <div class="rewiewe__wrap">
+      <h2>Отзывы</h2>
+        <div class="owl-carousel owl-carousel-1">
+           <div class="rewiewe__item">
+              <p>В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает.</p>
+              <h4>Елена Никалаевна</h4>
+            </div>
+            <div class="rewiewe__item">
+              <p>В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает.</p>
+              <h4>Елена Никалаевна</h4>
+            </div>
+            <div class="rewiewe__item">
+              <p>В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает.</p>
+              <h4>Елена Никалаевна</h4>
+            </div>
+            <div class="rewiewe__item">
+              <p>В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает.</p>
+              <h4>Елена Никалаевна</h4>
+            </div>
+            <div class="rewiewe__item">
+              <p>В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает.</p>
+              <h4>Елена Никалаевна</h4>
+            </div>
+            <div class="rewiewe__item">
+              <p>В компании «Азбука Окна» можно купить оригинальные окна Rehau подходящей модели. Любое количество камер, элегантный дизайн, множество цветов. Окна Рехау подходят для любых типов зданий. Немецкое качество — это, пожалуй, одно из немногих словосочетаний в мире, которое вызывает.</p>
+              <h4>Елена Никалаевна</h4>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="brands">
+    <h5 class="visually-hidden">Партнеры</h5>
+    <div class="brands__wrap">
+      <div class="brands__left">
+        <h2>Наши партнеры</h2>
+        <p>Мы используем комплектующие известных европейских производителей. При изготовлении окон Рехау компания АзбукаОкна комплектует свои изделия продукцией известных европейских марок.</p>
+      </div>
+      <div class="brands__right">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/brand-1.png" alt="Партнеры">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/brand-2.png"  alt="Партнеры">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/brand-3.png"  alt="Партнеры">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/brand-4.png"  alt="Партнеры">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="works">
+    <h5 class="visually-hidden">Наши работы</h5>
+    <div class="works__wrap">
+      <h2>Наши работы</h2>
+      <div class="owl-carousel owl-carousel-2">
+            <div class="works__item">
+              <img src="img/work-1.jpg"  alt="Работа">
+            </div>
+            <div class="works__item">
+              <img src="img/work-2.jpg" alt="Работа">
+            </div>
+            <div class="works__item">
+              <img src="img/work-3.jpg" alt="Работа">
+            </div>
+            <div class="works__item">
+              <img src="img/work-4.jpg" alt="Работа">
+            </div>
+            <div class="works__item">
+              <img src="img/work-5.jpg" alt="Работа"></div>
+        </div>
+    </div>
+  </section>
+  <section class="forms">
+    <h5 class="visually-hidden">Обратная свзяь</h5>
+    <div class="forms__wrap">
+      <form>
+        <h2>ОСТАВЬТЕ ЗАЯВКУ!</h2>
+        <ul>
+          <li><input type="text" placeholder="Ваше имя"></li>
+          <li><input type="text" placeholder="Телефон"></li>
+          <li><input type="text" placeholder="E-mail"></li>
+        </ul>
+        <textarea placeholder="Сообщение"></textarea>
+        <input class="forms__submit" type="submit" value="Отправить">
+      </form>
+    </div>
+  </section>
+</main>
 
 <footer class="main-footer">
+  <section class="main-footer__wrap">
+    <h5 class="visually-hidden">Подвал сайта</h5>
+    <div class="main-footer__left">
+      <p>© ООО «Азбука окна», 2017</p>
+      <div>
+        <p>Популярные разделы:&nbsp;</p>
+        <ul>
+          <li>
+            <a href="#">Окна</a>
+          </li>
+          <li>
+            <a href="#">Двери</a>
+          </li>
+          <li>
+            <a href="#">Балконы</a>
+          </li>
+        </ul>
+      </div>
+      <p>WebCanape - быстрое создание сайтов и продвижение</p>
+    </div>
+    <div class="main-footer__right">
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+         <li>
+          <a href="#">Карта сайта</a>
+        </li>
+         <li>
+          <a href="#">Обратная связь</a>
+        </li>
+      </ul>
+      <h4>+7 (495) 480-76-45</h4>
+      <p>Москва, шоссе Энтузиастов, д.7А ТЦ «Рогожская застава»</p>
+      <a href="#">E-mail: info@azbukaokna.ru</a>
+    </div>
+  </section>
 </footer>
 
+<div class="map__wrap">
+  <section class="map">
+    <h5 class="visually-hidden">Карта</h5>
+    <div class="map__close"></div>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaecc9989ec30c6be2e94bf4161c0b14bb5d8506b27e6a06c0c7c612340bdc66b&amp;width=600&amp;height=448&amp;lang=ru_RU&amp;scroll=true"></script>
+  </section>
+</div>
 
-<script src="js/js.js"></script>
+  <script>
+    'use strict';
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') {
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show');
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider')
+  </script>
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/js.js"></script>
 </body>
 </html>

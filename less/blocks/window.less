@@ -1,0 +1,155 @@
+.window{
+	display:flex;
+	padding-bottom:12px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.window__wrap ul li:last-child{
+	display:none;
+}
+
+.window__wrap{
+	width:@desktop-width;
+	margin:0 auto;
+}
+
+.window__wrap ul{
+	display:flex;
+	padding:0;
+	list-style:none;
+	margin:0;
+	justify-content:space-between;
+	margin-top:60px;
+	margin-bottom:50px;
+}
+
+
+.window__wrap ul li a{
+	width:216px;
+	display:block;
+	height:372px;
+	background-color: #f4f4f4;
+	text-decoration: none;
+	border-radius:6px;
+	display:flex;
+	flex-direction: column;
+
+}
+
+.window__wrap ul li a img{
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:30px;
+	padding-bottom:30px;
+
+}
+
+.window__wrap ul li a span.window__first{
+	display:block;
+	width:100%;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Exo2", sans-serif;
+	color: rgb(84, 84, 85);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding-top:26px;
+	border-top: 2px solid #d1528b;
+}
+
+.window__wrap ul li{
+	position:relative;
+}
+
+
+.window__wrap ul li a p{
+	display:block;
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.7);
+	width:100%;
+	height:100%;
+	margin:0;
+	border-radius:6px;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 1.4;
+	box-sizing: border-box;
+	padding:30px 20px;
+}
+
+.window__price{
+	margin-top:44px;
+	display:inline-block;
+	text-align:center;
+}
+
+.window__order{
+	display:inline-block;
+	text-align:center;
+	width:100%;
+	margin-top:24px;
+	background-color:;
+	font-size: 13px;
+	font-family: "Roboto";
+ 	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.571;
+	background-color:#ce4180;
+	border-radius:6px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+
+@media(max-width:1200px){
+	.window__wrap{
+		width:@tablet-width;
+		margin:0 auto;
+}
+
+.window__wrap ul li:last-child{
+	display:list-item !important;
+}
+
+.window__wrap ul{
+	flex-wrap:wrap;
+}
+
+.window__wrap ul li:nth-child(4),
+.window__wrap ul li:nth-child(5),
+.window__wrap ul li:nth-child(6){
+	margin-bottom:0;
+}
+
+.window__wrap ul li{
+	margin-bottom: 40px;
+}
+
+}
+
+@media(max-width:768px){
+	
+
+.window__wrap{
+	width:@mobile-width;
+	margin:0 auto;
+}
+
+.window__wrap ul li:last-child{
+	display:list-item !important;
+}
+
+
+.window__wrap ul li:nth-child(4){
+	height:372px;
+}
+
+
+}

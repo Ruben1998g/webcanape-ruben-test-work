@@ -1,0 +1,138 @@
+.forms{
+	display:flex;
+	background-color:#23b3d2;
+}
+
+.forms__wrap{
+	width:@desktop-width;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+}
+
+.forms__wrap form{
+	width:860px;
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	flex-direction:column;
+}
+
+.forms__wrap form h2{
+	font-size: 25px;
+	display:block;
+	width:100%;
+	font-family: "Myriad Pro";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	margin-top:54px;
+}
+
+.forms__wrap ul{
+	list-style:none;
+	display:flex;
+	justify-content:space-between;
+	margin-top:10px;
+	padding:0;
+
+}
+
+.forms__wrap textarea{
+	border-radius:4px;
+	border:none;
+	outline:none;
+	width:100%;
+	min-height:110px;
+	padding:8px;
+	box-sizing:border-box;
+}
+
+.forms__wrap ul li input{
+	border:none;
+	outline:none;
+	padding:11px;
+	width:250px;
+	background-repeat:4px;
+	border-radius:4px;
+}
+
+.forms__wrap ul li input::placeholder{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(197, 197, 197);
+  line-height: 1.375;
+}
+
+.forms__wrap textarea::placeholder{
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(197, 197, 197);
+  line-height: 1.375;
+}
+
+.forms__submit{
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: #ce4180;
+  padding:11px 34px;
+  border:none;
+  outline:none;
+  border-radius:4px;
+  margin-top:24px;
+  margin-bottom:60px;
+  margin-left:auto;
+  margin-right:auto;
+
+
+
+}
+
+
+@media(max-width:1200px){
+	.forms__wrap{
+		width:@tablet-width;
+}
+
+.forms__wrap form h2{
+	margin-top:36px;
+}
+
+.forms__wrap form ul{
+	flex-direction:column;
+	margin-bottom:3px;
+}
+
+.forms__wrap form ul li{
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.forms__wrap form textarea{
+	width:272px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.forms__wrap form input[type="submit"]{
+	margin-bottom:42px;
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+	.forms__wrap{
+		width:@mobile-width;
+	}
+
+}

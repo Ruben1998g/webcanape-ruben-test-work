@@ -1,0 +1,172 @@
+.logo__info-wrap{
+	display:flex;
+}
+
+.logo-info{
+	width:@desktop-width;
+	margin:0 auto;
+	display:flex;
+	position:relative;
+	justify-content:space-between;
+  box-sizing:border-box;
+  padding-bottom:25px;
+
+}
+
+.logo-info::before{
+	content:"";
+	display:block;
+	position:absolute;
+	width:98px;
+	height:46px;
+	background-color: #cd3378;
+}
+
+.logo-info__logotype{
+	display:flex;
+
+}
+
+.logo-info__logotype h3{
+  font-size: 24px;
+  font-family: "Exo2", sans-serif;;
+  color: white;
+  font-weight: bold;
+  line-height: 1.4;
+  position: relative;
+  margin:0;
+  padding:0;
+  margin-top:16px;
+  left:2px;
+  top:5px;
+}
+
+.logo-info__logotype h3 span{
+  font-size: 35px;
+  font-family: "Exo2", sans-serif;
+  color: #cd3378;
+  font-weight: bold;
+  line-height: 0;
+  padding:0;
+  position:relative;
+  left:-2px;
+}
+
+.logo-info__logotype p{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #818181;
+  line-height: 1.2;
+  margin-left:37px;
+  margin-top:auto;
+  margin-bottom:auto;
+  padding-top:22px;
+
+
+
+}
+
+.logo-info__call div a{
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(84, 84, 85);
+  font-weight: bold;
+  line-height: 0.909;
+  margin:0;
+  margin-top:auto;
+  margin-bottom:auto;
+
+}
+
+.logo-info__call div{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.logo-info__call {
+  display:flex;
+}
+.logo-info__call div span{
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color:#818181;
+  line-height:1;
+  display:block;
+  padding-top:6px;
+}
+
+.logo-info__last-call{
+  display:inline-block;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #ce4180;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.571;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 12px 20px;
+
+}
+
+.main-header__menu-wrap{
+  border-top:1px solid #eaeaea;
+  box-sizing:border-box;
+}
+
+.logo-info__button{
+  margin-left:42px;
+}
+
+.logo-info__call{
+  padding-top:22px;
+}
+
+@media(max-width:1200px){
+
+
+.logo-info{
+  width:@tablet-width;
+}
+
+.logo-info__call{
+  display:flex;
+}
+
+.logo-info__call div{
+  order:2;
+  margin-left:20px;
+}
+
+.logo-info__call .logo-info__button{
+   order:1;
+   margin-left:0;
+}
+
+
+}
+
+@media(max-width:768px){
+
+.logo-info{
+  width:@mobile-width;
+}
+
+.logo-info__logotype p{
+  display:none;
+}
+
+.logo-info__call .logo-info__button{
+  order:3;
+}
+
+.logo-info__button buttom{
+  margin-left:10px;
+}
+
+.logo-info__call div{
+  margin-left:0 !important;
+}
+
+}

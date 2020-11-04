@@ -1,0 +1,160 @@
+.rewiewe{
+	display:flex;
+	border-bottom: 1px solid #eaeaea;
+	padding-bottom:30px;
+}
+
+.rewiewe__wrap{
+	width:@desktop-width;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+}
+
+.rewiewe h2{
+ 	font-size: 26px;
+ 	font-family: "Exo2", sans-serif;
+  	color: rgb(84, 84, 85);
+  	line-height: 1.2;
+  	margin-top:54px;
+  	font-weight:400;
+}
+
+
+.rewiewe__wrap div{
+	color:black;
+}
+
+.rewiewe__item{
+	background-color: #f4f4f4;
+	border-radius:6px;
+	width:250px;
+	height:410px;
+	border-radius:6px;
+	padding:18px 24px;
+	box-sizing:border-box;
+}
+
+.rewiewe__item p{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(129, 129, 129);
+  line-height: 1.375;
+} 
+
+.rewiewe__item h4{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(129, 129, 129);
+  line-height: 1.375;
+  font-weight:bold;
+}
+
+.owl-stage-outer{
+	position:relative;
+}
+
+.owl-nav{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+
+.owl-nav .owl-prev{
+	transform:translateX(-40px);
+}
+
+.owl-nav .owl-next{
+	transform:translateX(40px);
+}
+
+.owl-nav .owl-prev span{
+	font-size:50px;
+}
+
+.owl-nav .owl-next span{
+	font-size:50px;
+}
+
+
+
+.rewiewe .owl-next,
+.rewiewe .owl-prev{
+	transform:translateY(-16px);
+	background-color:rgba(0, 0, 0, 0.5) !important;
+	width:50px;
+	height:50px;
+	display:block;
+	border-radius:50%;
+}
+
+.rewiewe .owl-next{
+	position:relative;
+	top:16px;
+	left:40px;
+	outline:none;
+}
+
+.rewiewe .owl-prev{
+	position:relative;
+	top:16px;
+	left:-69px;
+	outline:none;
+}
+
+.rewiewe .owl-next span{
+	color:white;
+	position:relative;
+	top:-11px;
+	left:2px;
+}
+
+.rewiewe .owl-prev span{
+	color:white;
+	position:relative;
+	top:-11px;
+	left:0px;
+}
+
+
+@media(max-width:1200px){
+	.rewiewe__wrap{
+		width:@tablet-width;
+	}
+
+	.rewiewe__wrap h2{
+		margin-top:36px;
+	}
+
+	.rewiewe .owl-next{
+		position:relative;
+		top:16px;
+		left:68px;
+		outline:none;
+	}
+
+
+}
+
+@media(max-width:768px){
+	.rewiewe__wrap{
+		width:@mobile-width;
+	}
+
+	.rewiewe__item{
+		width:240px;
+		height:440px;
+	}
+
+	.rewiewe .owl-next{
+		top:16px;
+		left:62px;
+	}
+
+
+}
+
