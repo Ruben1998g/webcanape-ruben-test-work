@@ -30,6 +30,9 @@
 .owl-carousel .owl-nav.disabled {
   display: flex !important;
 }
+html {
+  overflow-x: hidden;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -261,6 +264,14 @@
 .adios {
   transform: translateY(-2000px) !important;
   transition: all 2s;
+}
+@media (max-width: 768px) {
+  .overflow {
+    overflow: unset !important;
+  }
+  .loader {
+    display: none !important;
+  }
 }
 #myBtn {
   display: none;
